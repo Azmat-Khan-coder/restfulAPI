@@ -7,7 +7,7 @@ var mongoose = require("mongoose");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/api/users");
 var productsRouter = require("./routes/api/products");
-var cors = require('cors')
+var cors = require('cors');
 var config = require("config");
 require('dotenv').config()
 var app = express();
@@ -42,7 +42,7 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 mongoose
-  .connect("mongodb+srv://awais:awais@cluster0.tpfm3.mongodb.net/final?retryWrites=true&w=majority", {
+  .connect("mongodb+srv://azmatkhan:azmat123@cluster0.q7kgj.mongodb.net/productscrud", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
